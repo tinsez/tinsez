@@ -170,7 +170,6 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
    #3d0507 padding-box;
     /* the color  */
   width: 120px;
-
  transition: cubic-bezier(0, 0, 0.59, 1.31) 0.7s;
 }
 .ribbon:hover {
