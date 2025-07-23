@@ -1,6 +1,6 @@
 
 // <![CDATA[
-var colour = "yellow"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
+var colour = "#f3eaeaff"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
 var sparkles = 50;
 /****************************
  *  Tinkerbell Magic Sparkle *
