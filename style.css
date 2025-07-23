@@ -109,7 +109,7 @@ margin-top: 2.4em;
   font-weight: 400;
   font-style: normal;
 overflow:auto;
-max-width: 80vw;
+max-width: 70vw;
 margin-left: 160px;
 position: absolute;
     display: inline-block;
@@ -175,7 +175,9 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
 }
 .ribbon:hover {
     width:150px;
-
+transform: translateY(-4%) rotate(-1deg);
+filter: drop-shadow(1px 5px 1px #000000);
+filter: brightness(1.5);
 }
 .ribbon:active {
     width:150px;
@@ -248,7 +250,7 @@ h1 {
   display:inline-block;
   overflow:auto;
   margin-left:170px;
-  width: 79.5vw;
+  width: 70vw;
 
   font-size:40px;
   text-align:right;
