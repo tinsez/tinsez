@@ -17,4 +17,4 @@ jobs:
         server: tinsez.art
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: https://www.tinsez.art/
+        server-dir: public_html
