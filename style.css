@@ -196,7 +196,7 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
 
   border-block: .5em solid #0000;
   padding-inline: .3em calc(var(--r) + .25em);
-  line-height: 1;
+  line-height: 0.95;
   clip-path: polygon(100% 0,0 0,0 100%,100% 100%,100% calc(100% - .25em),calc(100% - var(--r)) 50%,100% .25em);
   background:
    radial-gradient(.2em 50% at left,#000a,#0000) border-box,
@@ -236,6 +236,7 @@ filter: brightness(1.5);
  font-size:30px;
 height:40px;
 color:#000000;
+
 z-index:9999999;
 background-color:rgb(186, 155, 155);
 top:0px;
