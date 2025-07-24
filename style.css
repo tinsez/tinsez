@@ -30,6 +30,7 @@ https://i.pinimg.com/736x/a8/ed/45/a8ed45b8d936ac7c7db3d8d1f9f7f17b.jpg
 .sidenav {
   height: 100%;
   width: 130px;
+  
   position: fixed;
   background-image:url(https://64.media.tumblr.com/2bdb156772e62e13e5fbe11cbac44050/76d8ef7942be98a9-e1/s250x400/a542b97383e184ecf39294da8b8fe573c40fca50.pnj);
     image-rendering:pixelated;
@@ -52,6 +53,7 @@ https://i.pinimg.com/736x/a8/ed/45/a8ed45b8d936ac7c7db3d8d1f9f7f17b.jpg
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+  
 
  text-transform:uppercase;
   color: #f8eeee;
@@ -70,6 +72,7 @@ https://i.pinimg.com/736x/a8/ed/45/a8ed45b8d936ac7c7db3d8d1f9f7f17b.jpg
   71.4295714286% {cursor: url(https://files.catbox.moe/jusxud.png), auto;}
   85.7142857143% {cursor: url(https://files.catbox.moe/9ysllo.png), auto;}
    100% {cursor: url(https://files.catbox.moe/4ct1ce.png), auto;}
+   
 } 
 
 @keyframes cursor {
@@ -108,14 +111,22 @@ margin-top: 2.4em;
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
+  display: flex;
+    justify-content: space-around;
+    align-items: stretch;
 overflow:auto;
-max-width: 70vw;
+height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
 margin-left: 160px;
 position: absolute;
-    display: inline-block;
-
     overflow: auto;
 
+}
+.middle{
+  width:75%;
 }
 .contentbox{
 background-image: url(https://solaria.neocities.org/recipes/linetile.png);
@@ -284,9 +295,10 @@ h1 {
   display:inline-block;
   overflow:auto;
   margin-left:170px;
+  height:150px;
   width: 70vw;
   font-size:40px;
-  text-align:right;
+  text-align:center;
 }
   h1 {
   --r: 25px; /* the radius */
@@ -442,6 +454,36 @@ font-family: FontAwesome;
 .footer-social-links a:hover:before{
     background: #111;
 }
+
+/*TESTING CLIX*/
+div.clickEffect{
+position:fixed;
+box-sizing:border-box;
+border-style:double;
+border-color:#ffffff;
+border-radius:50%;
+animation:clickEffect 0.4s ease-out;
+z-index: 9999999999999999;
+background-image:url()
+
+}
+@keyframes clickEffect{
+0%{
+opacity:1;
+width:0.5em; height:0.5em;
+margin:-0.25em;
+border-width:0.5em;
+border-color:#ffffff;
+}
+100%{
+opacity:0.2;
+width:15em; height:15em;
+margin:-7.5em;
+border-width:0.03em;
+border-color:#2b2000;
+}
+}
+/*END*/
   
 /* media screens etc*/
 @media screen and (max-height: 450px) {
