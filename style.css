@@ -113,7 +113,7 @@ max-width: 70vw;
 margin-left: 160px;
 position: absolute;
     display: inline-block;
-    height: 88vh;
+
     overflow: auto;
 
 }
@@ -213,6 +213,7 @@ filter: brightness(1.5);
 }
 .ribbon:active {
     width:150px;
+    
 }
 .shape:before {
   content: '';
