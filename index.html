@@ -8,15 +8,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 </style>
 </head>
-<link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+
 <script src="click.js"></script>
+
 
 <!--BEGINNING OF CODE-------------------------------->
 <body>
+
+
 
   <!--SIDENAV-------------------------------->
 <div class="sidenav" style="border-bottom: white dotted 2px;text-align:center;background-color:rgba(255, 255, 255, 0.395);">
@@ -25,8 +27,11 @@
 <hr>
   <!--RIBBONS-------------------------------->
     <!--RIBBON 1--->
+    
 <div class="ribbon">
-<a href="https://www.tinsez.art/" id="home">home</a>
+  
+<a href="https://www.tinsez.art/" id="home" >home</a>
+
   </div>
   <br><br><br>
    <!--RIBBON 2--->
@@ -104,9 +109,37 @@
  </div>
 </section>
 <!--end of MIDDLE--------------------------------------->
-<!--start of END---------------------------------------->
+<!--start of END and SVG wiggle effect!---------------------------------------->
+ <svg>
+  <defs>
+    <filter id="shake0">
+      <feTurbulence id="turbulence" baseFrequency = "0.01" numOctaves="3" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="4"/>
 
+    </filter>
+      <filter id="shake1">
+      <feTurbulence id="turbulence" baseFrequency = "0.01" numOctaves="3" seed="1"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5"/>
 
+    </filter>
+      <filter id="shake2">
+      <feTurbulence id="turbulence" baseFrequency = "0.01" numOctaves="3" seed="2"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8"/>
+
+    </filter>
+      <filter id="shake3">
+      <feTurbulence id="turbulence" baseFrequency = "0.01" numOctaves="3" seed="3"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6"/>
+
+    </filter>
+      <filter id="shake4">
+      <feTurbulence id="turbulence" baseFrequency = "0.01" numOctaves="3" seed="6"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6"/>
+
+    </filter>
+  </defs>
+ </svg>
+<!--END and SVG wiggle effect!---------------------------------------->
 
 
 <!--END of END---------------------------------------->

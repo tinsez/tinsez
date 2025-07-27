@@ -4,12 +4,11 @@ body {
   background-image:url(https://files.catbox.moe/lgov8i.jpeg);
   background-size:200px;
 color:fff;
+
   image-rendering:pixelated;
   margin: 0px;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=58629),auto;
 }
-
-  
  /* https://64.media.tumblr.com/eda2344fa45e4601c92846e79f8505b4/de082a39fc3d8381-88/s540x810/90428055ff18f7dfcdd1602ebe04b8717942c8a3.pnj
 
  <img src="https://64.media.tumblr.com/4742a454f8c34a2ec8b179130cbdfb3c/f9e3a8bcad7b0d79-14/s540x810/610ba408e2fc26827d4379e3933f2a9cc8c65fb7.png">
@@ -136,12 +135,12 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
   transform:  rotate(-1deg);
  position: relative;
    image-rendering:pixelated;
-
   border-radius:20px;
   border-top-right-radius:26.5px;
   border: solid 10px rgb(0, 0, 0);
   margin-bottom:30px;
-  
+   
+
 }
 .contentbox:before {
   content: "";
@@ -149,6 +148,28 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
   top: 0;
   right: 0;
   border-width: 0 50px 49px 0;
+  
+  border-style: solid;
+  border-color: #000000 #000000 #959d4b #9e9e9d;
+  background: #668e1500;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  border-top-left-radius:1px;
+  /* Firefox 3.0 damage limitation */
+  display: block; width: 0;
+  transition: 0.5s ease-in-out;
+  
+
+}
+.contentbox:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 50px 49px 0;
+  transform:scale(1.2);
+  transform-origin: top right;
   border-style: solid;
   border-color: #000000 #000000 #959d4b #9e9e9d;
   background: #668e1500;
@@ -172,6 +193,7 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
   border-top-right-radius:26.5px;
   border: solid 10px rgb(0, 0, 0);
   margin-bottom:30px;
+ 
   
 }
 .contentbox2:before {
@@ -197,7 +219,7 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
   font-size: 28px;
   font-weight: bold;
   z-index:999;
-
+filter:url("#shake2");
   color: #584646;
   position:fixed;
   line-height:10px;
@@ -216,16 +238,14 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
   width: 121px;
  transition: cubic-bezier(0, 0, 0.59, 1.31) 0.7s;
 }
-.ribbon:hover {
+.ribbon:hover, .ribbon:focus, .ribbon:active {
     width:150px;
 transform: translateY(-4%) rotate(-1deg);
 filter: drop-shadow(1px 5px 1px #000000);
 filter: brightness(1.5);
+ animation: distort .5s linear infinite;
 }
-.ribbon:active {
-    width:150px;
     
-}
 .shape:before {
   content: '';
   width: 398px;
@@ -234,6 +254,7 @@ filter: brightness(1.5);
   display: block;
   position: absolute;
   top: 1px;
+  
   left: 1px;
 }
 .shape, .shape:before {
@@ -336,6 +357,7 @@ p{
   padding-left:30px;
   color:black;
 font-weight:bold;
+
 letter-spacing:2px;
   background-size:500px;
 }
@@ -483,8 +505,15 @@ border-width:0.03em;
 border-color:#2b2000;
 }
 }
-/*END*/
-  
+/*ANIMATIONS AND KEYFRAMES WIGGLE*/
+  @keyframes distort {
+    0% {filter: url(#shake0);}
+     25% {filter: url(#shake1);}
+      50% {filter: url(#shake2);}
+       75% {filter: url(#shake3);}
+        100% {filter: url(#shake4);}
+        /*ANIMATIONS AND KEYFRAMES*/
+  }
 /* media screens etc*/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
