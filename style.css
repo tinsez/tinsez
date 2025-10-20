@@ -128,7 +128,7 @@ position: absolute;
   width:75%;
 }
 .contentbox{
-background-image: url(https://solaria.neocities.org/recipes/linetile.png);
+background-color:white;
   background-size: 35px; 
   line-height: 33.9px;
   margin-right:20px;
@@ -182,7 +182,7 @@ background-image: url(https://solaria.neocities.org/recipes/linetile.png);
 
 }
 .contentbox2{
-background-image: url(https://solaria.neocities.org/recipes/linetile.png);
+background-color:white;
   background-size: 35px; 
  line-height: 33px;
   margin-right:20px;
@@ -329,8 +329,6 @@ h1 {
    font-family: "Reenie Beanie", cursive;
    text-transform:uppercase;
 
-  
-  aspect-ratio:-4px;
 background-image:url(https://64.media.tumblr.com/2bdb156772e62e13e5fbe11cbac44050/76d8ef7942be98a9-e1/s250x400/a542b97383e184ecf39294da8b8fe573c40fca50.pnj);
  background-size:300px;
  top:2px;
